@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* -----------------header----------------- */
+
+.header-con {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-meun {
+    display: flex;
+    gap: 80px;
+    list-style-type: none;
+
+}
+
+.hamburger-btn {
+    /* pc에서 안보이게 하기 */
+    display: none;
+}
+
+
+
+
+.sec {
+    height: 100vh;
+
+}
+
+.sec01 {
+    background-color: paleturquoise;
+}
+
+.sec02 {
+    background-color: plum;
+}
+
+.sec03 {
+    background-color: peachpuff;
+}
+
+.sec04 {
+    background-color: palegreen;
+}
+
+.sec05 {
+    background-color: palevioletred;
+}
+
+@media(max-width:1024px) {
+
+    .hamburger-btn {
+        display: block;
+        position: relative;
+    }
+
+    .header-nav {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(199, 199, 199);
+        border: 1px solid black;
+
+        display: none;
+    }
+
+    .on {
+        display: block;
+    }
+
+    .header-meun {
+        padding: 10px 24px;
+        gap: 40px;
+        justify-content: space-between;
+        text-align: right;
+        flex-direction: column;
+    }
+
+    .close-btn {
+        text-align: right;
+    }
+}
